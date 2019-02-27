@@ -14,6 +14,21 @@ From Wikipedia page:
 
 ## Classes Needed
 
+### Game
+
+Responsibilities:
+
+- Keeps track of which Player turn it is
+- Keep track of leading Score/Player
+- Declare Winner
+- Ask to play again
+
+Collaborators:
+
+- Player 1
+- Player 2
+- Score
+
 ### Player 1
 
 Responsibilities:
