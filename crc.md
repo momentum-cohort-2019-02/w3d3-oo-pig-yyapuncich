@@ -23,5 +23,58 @@ Responsibilities:
 
 Collaborators:
 
--Dice
--Score
+- Dice
+- Score
+
+### Player 2
+
+Responsibilities:
+
+- Rolls Dice
+- Holds
+
+Collaborators:
+
+- Dice
+- Score
+
+### Dice
+
+Responsibilities:
+
+- Rolls Random Side
+
+Collaborators:
+
+- Player 1
+- Player 2
+- Score
+
+### Score
+
+Responsibilities:
+
+- Keep track of turn totals
+- Clear turn totals if Dice rolls 1
+- Adds successful turn to player total
+- Keeps track of player totals
+
+Collaborators:
+
+- Player 1
+- Player 2
+- Dice
+
+### Winner
+
+Responsibilities:
+
+- Check score against total needed to win
+- Continues game
+- Ends game
+
+Collaborators:
+
+- Score
+- Player 1
+- Player 2
