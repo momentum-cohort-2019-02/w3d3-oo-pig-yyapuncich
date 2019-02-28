@@ -17,11 +17,12 @@ class ComputerPerson:
         Keep track of the player's total score by adding all the turn_total values as the game progresses
         """
 
-    def player_choice():
+    def choose():
         """
         Returns value of hold or roll depending on random choice.
         """
-        player_choice = hold or roll
+        choices = ['HOLD', 'ROLL']
+        return random.choice(choices)
 
 
 class PersonPerson:
@@ -53,12 +54,12 @@ class Game:
         self.current_winner = None
         self.player_choice = None
 
-    def roll_die():
-        """
-        Roll dice for random result range 1-6. Return the number
-        """
-        while self.current_player and wants to roll:
-            return random.randint(1,6)
+    # def roll_die():
+    #     """
+    #     Roll dice for random result range 1-6. Return the number
+    #     """
+    #     while self.current_player and wants to roll:
+    #         return random.randint(1,6)
 
     def begin_game(self):
         """
