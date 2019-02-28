@@ -20,17 +20,17 @@ Responsibilities:
 
 - Keeps track of which Player is next
 - Keeps track of leading Score/Player
-- Asks to play again
-- Keep track of turn totals
-- Clear turn totals if Dice rolls 1
-- Adds successful turn total to player score
-- Keeps track of player totals
+- Clear turn_totals if Dice rolls 1 (or add 0)
+- Adds successful turn_totals to player score
 - Declares Winner
+- Asks to play again
 
 Attributes:
 
-- score
-- players
+- player_totals
+- turn_totals
+- comp_player
+- pers_player
 - current_winner/goal
 
 Collaborators:
@@ -46,6 +46,7 @@ Responsibilities:
 
 - Rolls Dice
 - Holds
+- Calculates turn_total
 
 Attributes:
 - name
@@ -62,6 +63,7 @@ Responsibilities:
 
 - Rolls Dice
 - Holds
+- Calculates turn_total
 
 Attributes:
 - name

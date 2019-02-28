@@ -2,16 +2,17 @@ import pytest
 import random
 from pig import ComputerPerson, PersonPerson, Game
 
-comp_player = ComputerPerson('Regis', current_score=0)
-other_player = PersonPerson('Matilde', current_score=0)
-
+regis_comp = ComputerPerson('Regis', current_score=0)
+matilde_person = PersonPerson('Matilde', current_score=0)
+Game(regis_comp, matilde_person, None)
 
 def test_player_name():
-    assert comp_player.name == 'Regis'
-    assert other_player.name == 'Matilde'
+    assert regis_comp.name == 'Regis'
+    assert matilde_person.name == 'Matilde'
 
 def test_comp_choose():
-    assert comp_player.choose == 'HOLD' or 'ROLL'
+    assert regis_comp.choose == 'HOLD' or 'ROLL'
 
 def test_roll_die():
-    assert Game.roll_die() in range(1, 6)
+    assert regis_comp.roll_die() in range(1, 6)
+    assert matilde_person.roll_die() in range (1, 6)

@@ -12,6 +12,12 @@ class ComputerPerson:
         self.name = name
         self.current_score = current_score
 
+    def roll_die(self):
+        """
+        Roll dice for random result range 1-6. Return the number.
+        """
+        return random.randint(1, 6)
+
     def current_score(game, turn_total):
         """
         Keep track of the player's total score by adding all the turn_total values as the game progresses
@@ -34,6 +40,12 @@ class PersonPerson:
     def __init__(self, name, current_score=0):
         self.name = name
         self.current_score = current_score
+
+    def roll_die(self):
+        """
+        Roll dice for random result range 1-6. Return the number.
+        """
+        return random.randint(1, 6)
     
     def current_score(game, turn_total):
         """
@@ -52,16 +64,12 @@ class Game:
     Controls the flow of the game: keeps track of scores, who's turn it is, who wins, and if you want to play again. The goal is to reach 100 points.
     """
 
-    def __init__(self, choose, current_winner):
-        self.current_player = None
+    def __init__(self, comp_player, pers_player, current_winner):
+        # self.current_player = None
         self.current_winner = None
-        self.choose = None
-
-    def roll_die():
-        """
-        Roll dice for random result range 1-6. Return the number.
-        """
-        return random.randint(1,6)
+        # self.choose = None
+        self.comp_player = comp_player
+        self.pers_player = pers_player
 
     def begin_game(self):
         """
