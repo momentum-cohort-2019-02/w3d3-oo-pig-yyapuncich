@@ -16,6 +16,7 @@ class ComputerPerson:
         """
         Keep track of the player's total score by adding all the turn_total values as the game progresses
         """
+        pass
 
     def choose():
         """
@@ -38,38 +39,41 @@ class PersonPerson:
         """
         Keep track of the player's total score by adding all the turn_total values as the game progresses
         """
+        pass
 
-    def player_choice():
+    def choose():
         """
         Returns value of hold or roll depending on user input.
         """
+        pass
 
 class Game:
     """
     Controls the flow of the game: keeps track of scores, who's turn it is, who wins, and if you want to play again. The goal is to reach 100 points.
     """
 
-    def __init__(self, player_choice, current_winner):
+    def __init__(self, choose, current_winner):
         self.current_player = None
         self.current_winner = None
-        self.player_choice = None
+        self.choose = None
 
-    # def roll_die():
-    #     """
-    #     Roll dice for random result range 1-6. Return the number
-    #     """
-    #     while self.current_player and wants to roll:
-    #         return random.randint(1,6)
+    def roll_die():
+        """
+        Roll dice for random result range 1-6. Return the number.
+        """
+        return random.randint(1,6)
 
     def begin_game(self):
         """
         Allow PersonPerson and CompterPerson to roll die. The largest number gets to go first and roll!
         """
+        pass
 
     def turn_total(dice_roll):
         """
         For each turn the player will roll dice. If they don't roll a 1 they will add all the numbers for a turn_total. Otherwise add 0 to the turn_total
         """
+        pass
 
 if __name__ == "__main__":
     pass
