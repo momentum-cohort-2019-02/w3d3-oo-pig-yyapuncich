@@ -30,8 +30,8 @@ Responsibilities:
 Attributes:
 
 - score
-- player
-- goal
+- players
+- current_winner/goal
 
 Collaborators:
 
@@ -40,7 +40,7 @@ Collaborators:
 - Player 2
 
 *should there be 2 Player classes?*
-### Player 1
+### ComputerPerson
 
 Responsibilities:
 
@@ -50,13 +50,13 @@ Responsibilities:
 Attributes:
 - name
 - score
+- rolls_dice
 
 Collaborators:
 
 - Game
-- Dice
 
-### Player 2
+### PersonPerson
 
 Responsibilities:
 
@@ -66,13 +66,13 @@ Responsibilities:
 Attributes:
 - name
 - score
+- rolls_dice
 
 Collaborators:
 
 - Game
-- Dice
 
-### Dice
+<!-- ### Dice
 
 Responsibilities:
 
@@ -86,7 +86,7 @@ Collaborators:
 
 - Game
 - Player 1
-- Player 2
+- Player 2 -->
 
 <!-- ### Winner
 

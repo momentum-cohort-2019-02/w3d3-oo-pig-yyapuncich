@@ -76,4 +76,6 @@ class Game:
         pass
 
 if __name__ == "__main__":
-    pass
+
+    print(Game.roll_die())
+    print(ComputerPerson.choose())
