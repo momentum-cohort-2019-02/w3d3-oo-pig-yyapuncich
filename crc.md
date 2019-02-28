@@ -20,14 +20,24 @@ Responsibilities:
 
 - Keeps track of which Player is next
 - Keeps track of leading Score/Player
-- Declares Winner
 - Asks to play again
+- Keep track of turn totals
+- Clear turn totals if Dice rolls 1
+- Adds successful turn total to player score
+- Keeps track of player totals
+- Declares Winner
+
+Attributes:
+
+- score
+- player
+- goal
 
 Collaborators:
 
+- Game
 - Player 1
 - Player 2
-- Score
 
 *should there be 2 Player classes?*
 ### Player 1
@@ -37,10 +47,14 @@ Responsibilities:
 - Rolls Dice
 - Holds
 
+Attributes:
+- name
+- score
+
 Collaborators:
 
+- Game
 - Dice
-- Score
 
 ### Player 2
 
@@ -49,10 +63,14 @@ Responsibilities:
 - Rolls Dice
 - Holds
 
+Attributes:
+- name
+- score
+
 Collaborators:
 
+- Game
 - Dice
-- Score
 
 ### Dice
 
@@ -60,28 +78,17 @@ Responsibilities:
 
 - Rolls Random Side
 
-Collaborators:
+Attributes:
 
-- Player 1
-- Player 2
-- Score
-
-### Score
-
-Responsibilities:
-
-- Keep track of turn totals
-- Clear turn totals if Dice rolls 1
-- Adds successful turn to player total
-- Keeps track of player totals
+- sides
 
 Collaborators:
 
+- Game
 - Player 1
 - Player 2
-- Dice
 
-### Winner
+<!-- ### Winner
 
 Responsibilities:
 
@@ -91,6 +98,6 @@ Responsibilities:
 
 Collaborators:
 
-- Score
+- Game
 - Player 1
-- Player 2
+- Player 2 -->
