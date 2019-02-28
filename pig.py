@@ -1,6 +1,6 @@
 import random
 
-class PlayerOne:
+class ComputerPerson:
     """
     Computer player that will play against the user.
     """
@@ -12,7 +12,19 @@ class PlayerOne:
         self.name = name
         self.current_score = current_score
 
-class PlayerTwo:
+    def current_score(game, turn_total):
+        """
+        Keep track of the player's total score by adding all the turn_total values as the game progresses
+        """
+
+    def player_choice():
+        """
+        Returns value of hold or roll depending on random choice.
+        """
+        player_choice = hold or roll
+
+
+class PersonPerson:
     """
     Human player that will play against computer. They will choose by user input each turn to roll, or hold. Score totals will display after each turn. 
     """
@@ -20,18 +32,43 @@ class PlayerTwo:
     def __init__(self, name, current_score=0):
         self.name = name
         self.current_score = current_score
+    
+    def current_score(game, turn_total):
+        """
+        Keep track of the player's total score by adding all the turn_total values as the game progresses
+        """
 
-# class Game:
-# """
-# Controls the flow of the game: keeps track of scores, who's turn it is, who wins, and if you want to play again. The goal is to reach 100 points.
-# """
+    def player_choice():
+        """
+        Returns value of hold or roll depending on user input.
+        """
 
-#     def __init__(self, player1, player2):
-#         self.player1 = player1
-#         self.player2 = player2
-#         self.current_player = None
+class Game:
+    """
+    Controls the flow of the game: keeps track of scores, who's turn it is, who wins, and if you want to play again. The goal is to reach 100 points.
+    """
 
-#     def begin_game(self):
+    def __init__(self, player_choice, current_winner):
+        self.current_player = None
+        self.current_winner = None
+        self.player_choice = None
+
+    def roll_die():
+        """
+        Roll dice for random result range 1-6. Return the number
+        """
+        while self.current_player and wants to roll:
+            return random.randint(1,6)
+
+    def begin_game(self):
+        """
+        Allow PersonPerson and CompterPerson to roll die. The largest number gets to go first and roll!
+        """
+
+    def turn_total(dice_roll):
+        """
+        For each turn the player will roll dice. If they don't roll a 1 they will add all the numbers for a turn_total. Otherwise add 0 to the turn_total
+        """
 
 if __name__ == "__main__":
     pass
